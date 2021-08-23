@@ -8,8 +8,6 @@
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
 
-  transition: color 3s ease-in-out, border 3s ease-in-out;
-  transition-delay: 2s;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -17,7 +15,6 @@
 a {
   text-decoration: inherit;
   color: inherit;
-  transition: border 2s ease-out;
 }
 
 #homelink {
@@ -28,7 +25,6 @@ a {
 }
 
 #homelink:hover {
-  transition: none;
   border: white 1px solid;
 }
 
@@ -66,7 +62,6 @@ a {
   text-align: center;
   width: 100vw;
   justify-content: center;
-  transition-delay: 12s;
 }
 
 .please {
@@ -97,14 +92,12 @@ a {
   border: 1px white solid;
   padding: 10px;
   margin: 10px;
-  transition-delay: 12s;
   border-radius: 10px;
 }
 
 #b5,
 #b6,
 #please1 {
-  transition: none;
   border-color: black;
   color: black;
 }
@@ -116,7 +109,6 @@ a {
 .btn:hover {
   background-color: white;
   color: black;
-  transition: none;
 }
 
 #home1 {
@@ -126,7 +118,6 @@ a {
 
 #home2 {
   padding-left: 10vw;
-  transition-delay: 7s;
   background-color: rgba(0, 0, 0, 0);
 }
 

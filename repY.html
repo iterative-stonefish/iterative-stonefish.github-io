@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>:)</title>
+    <link href="./styles.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
     <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase.js"></script>
+  </head>
+  <body onload="repy()">
+    <div class="banner" id="header">
+      <a href="./index.html" id="homelink">Home</a>
+    </div>
+    <div id="box1">
+      <h1 id="box11">😊</h1>
+      <p id="box12">Nice...</p>
+    </div>
     <script>
       // Your web app's Firebase configuration
       var firebaseConfig = {
@@ -27,14 +36,5 @@
       firebase.initializeApp(firebaseConfig);
     </script>
     <script src="./database.js" defer></script>
-  </head>
-  <body onload="repy()">
-    <div class="banner" id="header">
-      <a href="./index.html" id="homelink">Home</a>
-    </div>
-    <div id="box1">
-      <h1 id="box11">😊</h1>
-      <p id="box12">Nice...</p>
-    </div>
   </body>
 </html>
