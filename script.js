@@ -15,32 +15,68 @@ function typeWrite() {
     }
   }
 }
+
+setTimeout(typeWrite, 5000);
+
+function transitiond() {
+  var e1 = document.getElementById("home1");
+  var e2 = document.getElementById("home2");
+  var e3 = document.getElementById("b1");
+  var e4 = document.getElementById("b2");
+  var e5 = document.getElementById("b3");
+  var e6 = document.getElementById("b4");
+  var t = 0;
+  var x = 0.0;
+  var xx = 0.0;
+  var id = setInterval(step, 90);
+  function step() {
+    t += 1;
+
+    if (t >= 15) {
+      x += 0.016;
+      x = Math.min(1.0, x);
+    }
+    if (x == 1) {
+      xx += 0.03;
+    }
+
+    xx = Math.min(1.0, xx);
+    e1.style.color = `rgba(255, 255, 255, ${x})`;
+    e2.style.color = `rgba(255, 255, 255, ${xx})`;
+    e3.style.color = `rgba(255, 255, 255, ${xx})`;
+    e4.style.color = `rgba(255, 255, 255, ${xx})`;
+    e5.style.color = `rgba(255, 255, 255, ${xx})`;
+    e6.style.color = `rgba(255, 255, 255, ${xx})`;
+
+    e3.style.border = `rgba(255, 255, 255, ${xx}) solid 1px`;
+    e4.style.border = `rgba(255, 255, 255, ${xx}) solid 1px`;
+    e5.style.border = `rgba(255, 255, 255, ${xx}) solid 1px`;
+    e6.style.border = `rgba(255, 255, 255, ${xx}) solid 1px`;
+    if (xx == 1) {
+      clearInterval(id);
+    }
+  }
+}
+
+transitiond();
+
 var b1 = document.getElementById("b1");
 var b2 = document.getElementById("b2");
 var b3 = document.getElementById("b3");
 var b4 = document.getElementById("b4");
 
-function f() {
-  this.style.transition = "none";
-}
-
 function ff() {
-  this.style.transition = "none";
   var elem = document.getElementById("home2");
-  elem.innerHTML = ":(";
+  elem.innerText = ":(";
   elem.style.fontSize = "5rem";
 }
 
 function fff() {
   var elem = document.getElementById("home2");
-
-  elem.innerHTML = "How about I take you out on a date?";
-  elem.style.fontSize = "1rem";
+  elem.innerHTML = "How about I take you out for dinner?";
+  elem.style.fontSize = "0.75rem";
 }
 
-b1.onmouseover = f;
-b2.onmouseover = f;
-b3.onmouseover = f;
 b4.onmouseover = ff;
 b4.onmouseleave = fff;
 
@@ -86,6 +122,7 @@ function transition1() {
     }
   }
 }
+
 b4.onclick = transition1;
 
 var header = document.getElementById("header");
@@ -99,5 +136,3 @@ function wf() {
 }
 
 window.onscroll = wf;
-
-// setTimeout(typeWrite, 5000);
