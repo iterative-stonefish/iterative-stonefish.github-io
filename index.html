@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hi!</title>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCslj-F-JBRcpq83fVCrf3NThzKG0_GuHs",
+        authDomain: "hello-f420f.firebaseapp.com",
+        databaseURL: "https://hello-f420f-default-rtdb.firebaseio.com",
+        projectId: "hello-f420f",
+        storageBucket: "hello-f420f.appspot.com",
+        messagingSenderId: "682311552429",
+        appId: "1:682311552429:web:b07b3b41af24c8bf8ca524",
+        measurementId: "G-FR22V4MP25",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="./script.js" defer></script>
+    <script src="./database.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="banner" id="header">
+      <a href="#hhre" id="homelink">Home</a>
+    </div>
+    <div class="home" id="hhre">
+      <h2 id="home1">Hi! Aishani,<span id="name"></span></h2>
+      <h5 id="home2">How about I take you out on a date?</h5>
+    </div>
+    <div class="buttons">
+      <a id="b1" class="btn" href="./repY.html">Yes, Sure!!!</a>
+      <a id="b2" class="btn" href="./repY.html">Of Course :)</a>
+      <a id="b3" class="btn" href="./repY.html">Ok!</a>
+      <a id="b4" class="btn" href="#hhre2">No</a>
+    </div>
+    <div id="buf"></div>
+    <div id="buf2"></div>
+    <div class="please" id="hhre2">
+      <h1 id="please1">Please? 🥺</h1>
+    </div>
+    <div class="buttons">
+      <a id="b5" class="btn" href="./repY.html">OK Fine! I'll go :)</a>
+      <a id="b6" class="btn" href="./repN.html">Still NO!</a>
+    </div>
+    <div id="buf"></div>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+* {
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  background: black;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+
+  transition: color 3s ease-in-out, border 3s ease-in-out;
+  transition-delay: 2s;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+  transition: border 2s ease-out;
+}
+
+#homelink {
+  position: absolute;
+  right: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#homelink:hover {
+  transition: none;
+  border: white 1px solid;
+}
+
+.banner {
+  align-items: center;
+  display: flex;
+
+  font-style: normal;
+  font-size: 1rem;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  padding-left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.home {
+  align-items: flex-end;
+  display: flex;
+  height: 55vh;
+  padding-left: 20px;
+  padding-right: 10px;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url("./media/body.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.buttons {
+  align-items: center;
+  height: 20vh;
+  display: flex;
+  text-align: center;
+  width: 100vw;
+  justify-content: center;
+  transition-delay: 12s;
+}
+
+.please {
+  align-items: flex-end;
+  height: 50vh;
+  display: flex;
+  text-align: center;
+  width: 100vw;
+  justify-content: center;
+}
+
+#buf {
+  height: 30vh;
+}
+
+#buf2 {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./media/body.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.btn {
+  border: 1px white solid;
+  padding: 10px;
+  margin: 10px;
+  transition-delay: 12s;
+  border-radius: 10px;
+}
+
+#b5,
+#b6,
+#please1 {
+  transition: none;
+  border-color: black;
+  color: black;
+}
+
+#b6 {
+  font-size: 0.7rem;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  transition: none;
+}
+
+#home1 {
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#home2 {
+  padding-left: 10vw;
+  transition-delay: 7s;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#box1 {
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#box11 {
+  padding-right: 20px;
+  font-size: 5rem;
+}
+#box12 {
+  padding-left: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: lighter;
+}
